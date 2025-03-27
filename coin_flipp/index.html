@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="flip.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coin Flip Game</h1>
+        <p>Select Heads or Tails:</p>
+        
+        <div class="buttons">
+            <button onclick="setChoice('Heads')">Heads</button>
+            <button onclick="setChoice('Tails')">Tails</button>
+        </div>
+
+        <p id="selectedChoice">Your Choice: None</p>
+
+        <div class="coin-container">
+            <div class="coin" id="coin">
+                <img src="heads.png" id="coinImg" alt="Coin">
+            </div>
+        </div>
+
+        <button id="flipButton" onclick="flipCoin()">Flip Coin</button>
+
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
